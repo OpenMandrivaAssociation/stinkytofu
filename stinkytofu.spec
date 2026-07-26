@@ -22,6 +22,7 @@ BuildRequires:	rocm-cmake
 BuildRequires:	rocm-hip-devel
 BuildRequires:	rocm-comgr-devel
 BuildRequires:	clang >= %{rocm_llvm_maj_ver}
+BuildRequires:	clang-tools
 BuildRequires:	pkgconfig(libdrm)
 
 ExclusiveArch:	%{x86_64} %{aarch64}
