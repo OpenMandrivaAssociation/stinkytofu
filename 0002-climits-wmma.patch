@@ -1,0 +1,10 @@
+--- a/src/transforms/asm/StinkyWmmaVgprReorderPass.cpp
++++ b/src/transforms/asm/StinkyWmmaVgprReorderPass.cpp
+@@ -50,6 +50,7 @@
+ 
+ #include <algorithm>
+ #include <cassert>
++#include <climits>
+ #include <iostream>
+ #include <map>
+ #include <set>
