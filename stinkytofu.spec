@@ -3,6 +3,7 @@
 Name:		stinkytofu
 Version:	7.14.0
 Release:	1
+%{!?rocm_llvm_maj_ver:%global rocm_llvm_maj_ver 23}
 Summary:	AMDGCN IR toolkit for ROCm TensileLite / rocisa
 License:	MIT
 Group:		System/Libraries
@@ -18,6 +19,7 @@ Patch2:		0003-guard-default-amdclang.patch
 BuildRequires:	rocm-rpm-macros
 BuildRequires:	cmake
 BuildRequires:	ninja
+BuildRequires:	git-core
 BuildRequires:	rocm-cmake
 BuildRequires:	rocm-hip-devel
 BuildRequires:	rocm-comgr-devel
