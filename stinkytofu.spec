@@ -2,7 +2,7 @@
 
 Name:		stinkytofu
 Version:	7.14.0
-Release:	1
+Release:	2
 %{!?rocm_llvm_maj_ver:%global rocm_llvm_maj_ver 23}
 Summary:	AMDGCN IR toolkit for ROCm TensileLite / rocisa
 License:	MIT
@@ -27,7 +27,6 @@ BuildRequires:	clang >= %{rocm_llvm_maj_ver}
 BuildRequires:	clang-tools
 BuildRequires:	pkgconfig(libdrm)
 
-ExclusiveArch:	%{x86_64} %{aarch64}
 
 %description
 StinkyTofu is a C++ AMDGCN IR and assembler toolkit used by the rocisa
