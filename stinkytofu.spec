@@ -1,16 +1,16 @@
-# StinkyTofu — AMDGCN IR / assembler helpers for TensileLite rocisa (TheRock 10.1)
+# StinkyTofu — AMDGCN IR / assembler helpers for TensileLite rocisa (TheRock 10.2)
 
 Name:		stinkytofu
-Version:	10.1.0
+Version:	10.2.0
 Release:	1
 %{!?rocm_llvm_maj_ver:%global rocm_llvm_maj_ver 23}
 Summary:	AMDGCN IR toolkit for ROCm TensileLite / rocisa
 License:	MIT
 Group:		System/Libraries
 URL:		https://github.com/ROCm/rocm-libraries
-Source0:	https://github.com/ROCm/rocm-libraries/releases/download/therock-10.1/stinkytofu.tar.gz#/stinkytofu-%{version}.tar.gz
+Source0:	https://github.com/ROCm/rocm-libraries/releases/download/therock-10.2/stinkytofu.tar.gz#/stinkytofu-%{version}.tar.gz
 # LLVM/libstdc++: UINT_MAX needs <climits>
-# 10.1 already guards the monorepo ClangTidy include.
+# 10.2 already guards the monorepo ClangTidy include.
 Patch0:		0002-climits-wmma.patch
 # Monorepo default_amdclang.cmake is absent from the release tarball
 Patch1:		0003-guard-default-amdclang.patch
